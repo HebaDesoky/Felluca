@@ -1,0 +1,5 @@
+<li *ngFor="let Person of DestinationList$ | async">
+    Id: {{Person.personID}} Name: {{Person.name}} Email: {{Person.email}}
+    userName: {{Person.userName}}
+    <button (click)="deleteDestination(Person.personID)">X</button>
+</li>

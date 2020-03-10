@@ -1,0 +1,28 @@
+<p>add-or-update-Boat works!</p>
+<div>
+    <form class="form-container">
+        <div>
+            <label for="id">Id</label>
+            <input name="id" type="number" [(ngModel)]="newBoat.id"/>
+        </div>
+        <div>
+            <label for="name-input">boatManID</label>
+            <input type="number" name="boatManID" [(ngModel)]="newBoat.boatManID"/>
+        </div>
+        <div>
+            <label for="Boatsite-number">capacity</label>
+            <input type="number" name="capacity"[(ngModel)]="newBoat.capacity" />
+        </div>  
+        <div>
+            <label for="Boatsite-number">id</label>
+            <input type="number" name="id"[(ngModel)]="newBoat.id" />
+        </div>        
+        <div>
+            <label for="notes">license</label>
+            <input type="text" name="license"[(ngModel)]="newBoat.license" />
+        </div>
+
+        
+        <button type="button"(click)="addOrUpdateBoatRecord()">Save</button>
+    </form>
+</div>

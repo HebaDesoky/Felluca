@@ -1,0 +1,5 @@
+<p>city-list works!</p>
+<li *ngFor="let City of CityList$ | async">
+    Id: {{City.id}} Name: {{City.name}}  
+    <button (click)="deleteCity(City.id)">X</button>
+</li>

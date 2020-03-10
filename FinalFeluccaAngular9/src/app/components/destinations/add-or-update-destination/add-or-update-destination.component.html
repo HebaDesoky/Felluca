@@ -1,0 +1,28 @@
+<p>add-or-update-destination works!</p>
+<div>
+    <form class="form-container text-center">
+        <div class="form-group">
+            <label for="id">Id</label>
+            <input name="id" type="number" [(ngModel)]="newDestination.id"/>
+        </div>
+        <div class="form-group">
+            <label for="name-input">Name</label>
+            <input name="DestinationName" [(ngModel)]="newDestination.name"/>
+        </div>
+        <div class="form-group">
+            <label for="Destinationsite-number">Admin ID</label>
+            <input type="number" name="adminID"[(ngModel)]="newDestination.adminID" />
+        </div>  
+        <div class="form-group">
+            <label for="Destinationsite-number">city ID</label>
+            <input type="number" name="cityID"[(ngModel)]="newDestination.cityID" />
+        </div>        
+        <div class="form-group">
+            <label for="notes">info</label>
+            <input type="text" name="info"[(ngModel)]="newDestination.info" />
+        </div>
+
+        
+        <button type="button"(click)="addOrUpdateDestinationRecord()">Save</button>
+    </form>
+</div>

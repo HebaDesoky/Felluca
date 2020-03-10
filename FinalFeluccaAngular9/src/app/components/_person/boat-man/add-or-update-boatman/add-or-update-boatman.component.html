@@ -1,0 +1,28 @@
+<p>add-or-update-boatman works!</p>
+<div>
+    <form class="form-container">
+        <div>
+            <label for="id">Id</label>
+            <input name="id" type="number" [(ngModel)]="newBoatman.id"/>
+        </div>
+        <div>
+            <label for="name-input">Name</label>
+            <input name="DestinationName" [(ngModel)]="newBoatman.name"/>
+        </div>
+        <div>
+            <label for="Destinationsite-number">Admin ID</label>
+            <input type="number" name="adminID"[(ngModel)]="newBoatman.adminID" />
+        </div>  
+        <div>
+            <label for="Destinationsite-number">city ID</label>
+            <input type="number" name="cityID"[(ngModel)]="newBoatman.cityID" />
+        </div>        
+        <div>
+            <label for="notes">info</label>
+            <input type="text" name="info"[(ngModel)]="newBoatman.info" />
+        </div>
+
+        
+        <button type="button"(click)="addOrUpdateDestinationRecord()">Save</button>
+    </form>
+</div>

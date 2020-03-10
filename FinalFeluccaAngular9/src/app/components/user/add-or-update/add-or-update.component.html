@@ -1,0 +1,29 @@
+<p>add-or-update works!</p>
+
+<div>
+    <form class="form-container">
+        <div>
+            <label for="id">Id</label>
+            <input name="id" type="number" [(ngModel)]="newUser.id"/>
+        </div>
+        <div>
+            <label for="name-input">Name</label>
+            <input name="UserName" [(ngModel)]="newUser.name"/>
+        </div>
+        <div>
+            <label for="Usersite-number">email</label>
+            <input type="text" name="email"[(ngModel)]="newUser.email" />
+        </div>  
+        <div>
+            <label for="Usersite-number">password</label>
+            <input type="number" name="password"[(ngModel)]="newUser.password" />
+        </div>        
+        <div>
+            <label for="notes">profilePic</label>
+            <input type="text" name="profilePic"[(ngModel)]="newUser.profilePic" />
+        </div>
+
+        
+        <button type="button"(click)="addOrUpdateUserRecord()">Save</button>
+    </form>
+</div>

@@ -1,0 +1,22 @@
+<li *ngFor="let Destination of DestinationList$ | async">
+    Id: {{Destination.id}} Name: {{Destination.name}} Destinationsite Number: {{Destination.info}}
+    <button (click)="deleteDestination(Destination.id)">X</button>
+</li>
+<div class="container text-center ">
+
+    <div class="flip" *ngFor="let Destination of DestinationList$ | async">
+        <div class="front rounded-0"
+            style="background-image: url(https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+            <h1 class="text-shadow"> {{Destination.name}}</h1>
+        </div>
+        <div class="back rounded-0">
+            <h2>{{Destination.name}}</h2>
+            <p> {{Destination.info}}</p>
+        </div>
+        <button type="button" class="btn btn-warning btn-lg btn-block rounded-0 rounded-bottom" style="color: white;"
+            routerLink="/book">Book Now!</button>
+
+    </div>
+
+
+</div>

@@ -1,0 +1,20 @@
+<p>add-or-update-city works!</p>
+<div>
+    <form class="form-container">
+        <div>
+            <label for="id">Id</label>
+            <input name="id" type="number" [(ngModel)]="newCity.id"/>
+        </div>
+        <div>
+            <label for="name-input">Name</label>
+            <input name="CityName" [(ngModel)]="newCity.name"/>
+        </div>
+        <div>
+            <label for="Citysite-number">Admin ID</label>
+            <input type="number" name="adminID"[(ngModel)]="newCity.adminID" />
+        </div>  
+            
+        
+        <button type="button"(click)="addOrUpdateCityRecord()">Save</button>
+    </form>
+</div>

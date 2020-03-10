@@ -1,0 +1,5 @@
+<p>Boatman-list worksssssssss!</p>
+<li *ngFor="let Boatman of BoatmanList$ | async">
+    Id: {{Boatman.boatManID}} <br> Name: {{Boatman.user}}  
+    <button (click)="deleteBoatman(Boatman.boatManID)">X</button>
+</li>

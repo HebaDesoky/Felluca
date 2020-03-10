@@ -1,0 +1,55 @@
+<div>
+  <br>
+  <!-- Button to Open the Modal -->
+  <div class="text-center">
+    <button type="button" style="font-size: 30px;" class="btn  btn-lg font-weight-bold btn-block"
+     style="background-color: cadetblue;" data-toggle="modal" data-target="#myDest">
+      <i class="fa fa-registered" aria-hidden="true" style="font-size: 30px; color: white;"> Register New User</i>
+    </button>
+    <br><br>
+  </div>
+  <form [formGroup]="myForm" class="form font-weight-bold" (ngSubmit)="addOrUpdateDestinationRecord($event)">
+
+    <!-- The Modal -->
+    <div class="modal" id="myDest">
+      <div class="modal-dialog   modal-lg">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header bg-success text-center">
+            <h4 class="modal-title" style="font-size: 35px; color: white;">Add User</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <br>
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="form-group">
+              <input formControlName="DestinationName" type="text" placeholder="Name" class="form-control" [(ngModel)]="newDestination.name">
+            </div>
+            <br>
+            <div>
+              <input formControlName="adminID" type="number" placeholder="adminID" class="form-control" [(ngModel)]="newDestination.adminID">
+              <br>
+            </div>
+            <div>
+              <input formControlName="cityID" type="text" placeholder="cityID" class="form-control" [(ngModel)]="newDestination.cityID">
+              <br>
+            </div>
+            <div>
+              <input formControlName="info" type="text" placeholder="info" class="form-control" [(ngModel)]="newDestination.info">
+              <br>
+            </div>
+          </div>
+          <!-- Modal footer -->
+          <div class="">
+            <div class="form-group row justify-content-center">
+              <a class="btn btn-success btn-lg font-weight-bold" style="font-size: 25;" (click)="addOrUpdateDestinationRecord()" href="">
+                <i class="material-icons">Add</i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
